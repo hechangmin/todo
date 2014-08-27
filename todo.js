@@ -11,7 +11,7 @@
 	var isType = function(type) {
 		return function(obj) {
 			return Object.prototype.toString.call(obj) === '[object ' + type + ']';
-		}
+		};
 	};
 	var isObject   = isType('Object');
 	var isError    = isType('Error');
@@ -70,10 +70,10 @@
 
 		if(self[type].length > 0){
 			self._status[type] = START;
-			curTask = self[type].shift()
+			curTask = self[type].shift();
 
 			if(!isArray(curTask)){
-				curTask = [curTask]    	
+				curTask = [curTask];  	
 			}
 
 			self.nCurTimes = 0;
