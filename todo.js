@@ -116,12 +116,10 @@
 	};
 
 	ToDo = function(fns){
-		return new ToDo.fn._init(fns);
+		return new createThis(fns);
 	};
 
-	ToDo.fn = ToDo.prototype;
-
-	ToDo.fn._init = function(fns){
+	var createThis = function(fns){
 		this['_fail'] = [];
 		this['_done'] = [];
 		this['_progress'] = [];
@@ -137,7 +135,9 @@
 		return this;
 	};
 	
-	ToDo.fn.pregress = function(fnProgress) {
+	createThis.prototype = ToDo.fn = ToDo.prototype;
+
+	ToDo.fn.progress = function(fnProgress) {
 		add('_progress', this, fnProgress);
 		return this;
 	};
@@ -173,7 +173,4 @@
 		add('_done', this, fns);
 		return this;
 	};
-
-	ToDo.fn._init.prototype = ToDo.fn;
-
 }());

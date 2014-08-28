@@ -8,6 +8,7 @@ JavaScript asynchronous management.
 ##usage##
 
 ```js
+
 function task1(next){
     setTimeout(function(){
         console.log('task1', +new Date());
@@ -65,8 +66,8 @@ function taskC(params){
 //ToDo([task1,task2]).done(taskA).done(task4);
 //ToDo([task1,task2]).done(taskA).always(task4);
 //ToDo([task1,task2]).fail(taskB).done(task4);
-//ToDo([task1,task2]).done(taskB).fail([task4,task5]);
-ToDo(task6).pregress(taskC);
+ToDo([task1,task2]).done(taskB).fail([task4,task5]);
+//ToDo(task6).progress(taskC);
 ```
 -----------------
 
