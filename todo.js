@@ -127,7 +127,7 @@
         this._status = {
             _done : READY,
             _fail : NOREADY,
-            _progress : NOREADY         
+            _progress : NOREADY
         };
 
         add('_done', this, fns);
