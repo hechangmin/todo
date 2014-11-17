@@ -1,8 +1,8 @@
 {
-  "name": "todo",
-  "version": "0.0.1",
-  "description": "JavaScript asynchronous management",
-  "homepage": "http://github.com/hechangmin/Todo",
+  "name": "todo4js",
+  "version": "0.0.3",
+  "description": "A JavaScript asynchronous manager。",
+  "homepage": "http://github.com/hechangmin/todo",
   "main": "./todo.js",
   "keywords": [
     "async",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hechangmin/Todo.git"
+    "url": "git://github.com/hechangmin/todo.git"
   },
   "dependencies": {},
   "devDependencies": {}

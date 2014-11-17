@@ -5,9 +5,15 @@ JavaScript asynchronous management.
 我并没有按照 Deferred/Promise 写，如果各位对 Deferred/Promise 有兴趣。
 请参考我另一位朋友的：[https://github.com/Lanfei/deferred](https://github.com/Lanfei/deferred)
 
+##installation##
+
+npm install todo4js
+
 ##usage##
 
 ```js
+
+require('todo4js');
 
 function task1(next){
     setTimeout(function(){
