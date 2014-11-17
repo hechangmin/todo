@@ -1,6 +1,6 @@
 {
   "name": "todo4js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A JavaScript asynchronous manager。",
   "homepage": "http://github.com/hechangmin/todo",
   "main": "./todo.js",
